@@ -10,24 +10,24 @@ namespace FizzBuzzTests
         int input;
 
         [TestMethod]
-        public void Error_Message_on_input_301()
+        public void False_return_on_input_301()
         {
-            //Arrange
+            //Given I have a user input of 301
             input = 301;
-            //Act
+            //When I call TestObj.InRange()
             var result = TestObj.InRange(input);
-            //Assert
+            //Then TestObj.InRanget() will return false
             Assert.AreEqual(false, result);
         }
 
         [TestMethod]
-        public void Error_Message_on_input_0()
+        public void False_return_on_input_0()
         {
-            //Arrange
+            //Given I have a user input of 0
             input = 0;
-            //Act
+            //When I call TestObj.InRange()
             var result = TestObj.InRange(input);
-            //Assert
+            //Then TestObj.InRanget() will return false
             Assert.AreEqual(false, result);
         }
     }

@@ -4,14 +4,16 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace FizzBuzzTests
 {
     [TestClass]
-    public class Tests
+    public class CorrectResultOnInput
     {
+        StringList TestObj = new StringList();
+        int input;
+
         [TestMethod]
         public void Returns_1_on_1_input()
         {
             //Arrange
-            int input = 1;
-            StringList TestObj = new StringList();
+            input = 1;            
             //Act
             var result = TestObj.NumList(input);
             //Assert
@@ -22,8 +24,7 @@ namespace FizzBuzzTests
         public void Returns_correct_on_2_input()
         {
             //Arrange
-            int input = 2;
-            StringList TestObj = new StringList();
+            input = 2;
             //Act
             var result = TestObj.NumList(input);
             //Assert
@@ -34,8 +35,7 @@ namespace FizzBuzzTests
         public void Returns_correct_on_3_input()
         {
             //Arrange
-            int input = 3;
-            StringList TestObj = new StringList();
+            input = 3;
             //Act
             var result = TestObj.NumList(input);
             //Assert
@@ -46,8 +46,7 @@ namespace FizzBuzzTests
         public void Returns_correct_on_5_input()
         {
             //Arrange
-            int input = 5;
-            StringList TestObj = new StringList();
+            input = 5;
             //Act
             var result = TestObj.NumList(input);
             //Assert
@@ -58,8 +57,7 @@ namespace FizzBuzzTests
         public void Returns_correct_on_6_input()
         {
             //Arrange
-            int input = 6;
-            StringList TestObj = new StringList();
+            input = 6;
             //Act
             var result = TestObj.NumList(input);
             //Assert
@@ -70,8 +68,7 @@ namespace FizzBuzzTests
         public void Returns_correct_on_10_input()
         {
             //Arrange
-            int input = 10;
-            StringList TestObj = new StringList();
+            input = 10;
             //Act
             var result = TestObj.NumList(input);
             //Assert
@@ -82,8 +79,7 @@ namespace FizzBuzzTests
         public void Returns_correct_on_15_input()
         {
             //Arrange
-            int input = 15;
-            StringList TestObj = new StringList();
+            input = 15;
             //Act
             string result = TestObj.NumList(input);
             //Assert
@@ -94,8 +90,7 @@ namespace FizzBuzzTests
         public void Returns_correct_on_300_input()
         {
             //Arrange
-            int input = 300;
-            StringList TestObj = new StringList();
+            input = 300;
             //Act
             string result = TestObj.NumList(input);
             //Assert

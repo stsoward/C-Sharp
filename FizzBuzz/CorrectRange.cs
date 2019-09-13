@@ -1,17 +1,19 @@
 using FizzBuzz_Practice;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UnitTestProject1
+namespace FizzBuzzTests
 {
     [TestClass]
     public class CorrectRange
     {
+        StringList TestObj = new StringList();
+        int input;
+
         [TestMethod]
         public void Error_Message_on_input_301()
         {
             //Arrange
-            int input = 301;
-            StringList TestObj = new StringList();
+            input = 301;
             //Act
             var result = TestObj.InRange(input);
             //Assert
@@ -22,8 +24,7 @@ namespace UnitTestProject1
         public void Error_Message_on_input_0()
         {
             //Arrange
-            int input = 0;
-            StringList TestObj = new StringList();
+            input = 0;
             //Act
             var result = TestObj.InRange(input);
             //Assert
